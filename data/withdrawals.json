@@ -1,0 +1,18 @@
+[
+  {
+    "id": "test-withdrawal-123",
+    "affiliateId": "09581a97-e8c8-4146-b32e-beeee66cacc2",
+    "affiliateName": "Test Affiliate",
+    "affiliateEmail": "test@affiliate.com",
+    "amount": 100.50,
+    "paymentDetails": {
+      "bankName": "Maybank",
+      "accountNumber": "1234567890",
+      "accountHolder": "Test Affiliate",
+      "ewalletType": ""
+    },
+    "qrCodePath": "",
+    "status": "pending",
+    "createdAt": "2025-11-23T00:40:00.000Z"
+  }
+]

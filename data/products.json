@@ -1,0 +1,32 @@
+[
+  {
+    "id": "74550ae2-015e-434e-b086-4215c627ed89",
+    "name": "Chocolate Cake",
+    "price": 45,
+    "description": "Rich chocolate cake with premium cocoa",
+    "image": "/images/chocolate-cake.jpg",
+    "commissionPercent": 10,
+    "active": true,
+    "createdAt": "2025-11-23T00:25:17.158Z"
+  },
+  {
+    "id": "0376ff9a-053d-4dbc-8bc2-51329a99470c",
+    "name": "Tiramisu",
+    "price": 38,
+    "description": "Classic Italian tiramisu dessert",
+    "image": "/images/tiramisu.jpg",
+    "commissionPercent": 12,
+    "active": true,
+    "createdAt": "2025-11-23T00:25:17.158Z"
+  },
+  {
+    "id": "260e3f86-39a9-47b6-b8dd-b63dd91ca3ab",
+    "name": "Banana Puding",
+    "price": 15,
+    "description": "",
+    "image": "",
+    "commissionPercent": 10,
+    "active": true,
+    "createdAt": "2025-11-23T01:40:38.309Z"
+  }
+]

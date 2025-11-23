@@ -1,0 +1,44 @@
+[
+  {
+    "id": "d69a9deb-1def-47c8-b3ec-c85628ba0348",
+    "name": "Mohd Amirul Mukminin Bin Mansor",
+    "email": "amirul_minie@yahoo.com.my",
+    "password": "$2b$10$zarbTiXga8IBdDwJGRP2COJJRwWBS37oKDOhT5nIKehm2CUDZDM5S",
+    "phone": "0145070790",
+    "affiliateCode": "LODES-9L5EV",
+    "affiliateLink": "http://localhost:3000/?ref=LODES-9L5EV",
+    "active": true,
+    "balance": 0,
+    "totalEarnings": 0,
+    "totalSales": 0,
+    "paymentInfo": {
+      "bankName": "",
+      "accountNumber": "",
+      "accountHolder": "",
+      "ewalletType": "",
+      "qrCodePath": ""
+    },
+    "createdAt": "2025-11-23T00:26:01.377Z"
+  },
+  {
+    "id": "09581a97-e8c8-4146-b32e-beeee66cacc2",
+    "name": "Test Affiliate",
+    "email": "test@affiliate.com",
+    "password": "$2b$10$qv8guJGwlPTw4hqmOc0GouQCrlgtXMrcNRNfYE2BZqIFGqwcSSkL2",
+    "phone": "",
+    "affiliateCode": "LODES-ZB8Y7",
+    "affiliateLink": "http://localhost:3000/?ref=LODES-ZB8Y7",
+    "active": true,
+    "balance": 0,
+    "totalEarnings": 0,
+    "totalSales": 0,
+    "paymentInfo": {
+      "bankName": "",
+      "accountNumber": "",
+      "accountHolder": "",
+      "ewalletType": "",
+      "qrCodePath": ""
+    },
+    "createdAt": "2025-11-23T00:30:38.863Z"
+  }
+]

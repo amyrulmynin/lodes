@@ -1,0 +1,21 @@
+[
+  {
+    "id": "4a0e6771-dd8e-41af-ac9a-7534faea0a72",
+    "orderId": "ORD-1763861081514",
+    "productId": "74550ae2-015e-434e-b086-4215c627ed89",
+    "productName": "Chocolate Cake",
+    "customerName": "Customer Test",
+    "customerPhone": "0123456789",
+    "customerAddress": "123 Test St",
+    "quantity": 1,
+    "amount": 45,
+    "commission": 4.5,
+    "commissionPercent": 10,
+    "status": "pending",
+    "affiliateId": "09581a97-e8c8-4146-b32e-beeee66cacc2",
+    "affiliateCode": "LODES-ZB8Y7",
+    "affiliateName": "Test Affiliate",
+    "orderSource": "customer_web",
+    "createdAt": "2025-11-23T01:24:41.515Z"
+  }
+]

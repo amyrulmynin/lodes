@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lodes Affiliate - Dessert Affiliate Program
 
-## Getting Started
+Sistem affiliate untuk produk dessert premium dengan komisen fleksibel, pengurusan WhatsApp, dan integrasi Google Sheets.
 
-First, run the development server:
+## 🚀 Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Create .env.local file
+cp .env.example .env.local  # Or create manually
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📋 Default Login Credentials
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Admin:**
+- Email: `admin@lodes.com`
+- Password: `admin123`
 
-## Learn More
+**Affiliate:**
+- Register new account at `/affiliate/login`
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Admin Features
+- ✅ Product management (add/edit/delete products)
+- ✅ Set custom commission percentage per product
+- ✅ Sales tracking and management
+- ✅ Affiliate management
+- ✅ Withdrawal approval system
+- ✅ Google Sheets integration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Affiliate Features
+- ✅ Unique affiliate link and code
+- ✅ WhatsApp order collection
+- ✅ Real-time sales dashboard
+- ✅ Commission tracking (RM currency)
+- ✅ Withdrawal requests with QR upload
+- ✅ Payment details management
 
-## Deploy on Vercel
+## 💰 Commission System
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Flexible commission rates per product (set by admin)
+- Example: Chocolate Cake - 10%, Tiramisu - 12%
+- Automatic calculation and tracking
+- Minimum withdrawal: RM 50
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📱 WhatsApp Integration
+
+Orders are collected via WhatsApp:
+1. Affiliate fills order form
+2. System generates WhatsApp message with order details
+3. One-click send to admin's WhatsApp
+4. Admin confirms and creates sale in system
+
+## 📊 Google Sheets (Optional)
+
+To enable Google Sheets sync:
+1. Create Google Cloud project
+2. Enable Google Sheets API
+3. Create service account and download credentials
+4. Add to `.env.local`:
+   ```
+   GOOGLE_SHEET_ID=your_sheet_id
+   GOOGLE_CREDENTIALS={"type":"service_account",...}
+   ```
+
+## 🛠️ Tech Stack
+
+- Next.js 14 (App Router)
+- TypeScript
+- Custom CSS (Glassmorphism design)
+- File-based JSON database
+- JWT authentication
+- Google Sheets API
+- WhatsApp Business API
+
+## 📁 Project Structure
+
+```
+app/
+  ├── admin/          # Admin pages
+  ├── affiliate/      # Affiliate pages
+  ├── api/           # API routes
+  └── login/         # Auth pages
+lib/
+  ├── db.ts          # Database utilities
+  ├── auth.ts        # Authentication
+  ├── googleSheets.ts # Sheets integration
+  └── utils.ts       # Helper functions
+```
+
+## 🔐 Environment Variables
+
+```env
+JWT_SECRET=your-secret-key
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+GOOGLE_SHEET_ID=optional
+GOOGLE_CREDENTIALS=optional
+ADMIN_WHATSAPP=60123456789
+```
+
+## 🎨 Design System
+
+- Dark theme with purple/pink gradient accents
+- Glassmorphism effects
+- Responsive layout
+- Custom CSS utilities
+
+## 📝 License
+
+Private project for Lodes Desserts
