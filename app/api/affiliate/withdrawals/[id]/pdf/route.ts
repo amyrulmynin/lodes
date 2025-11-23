@@ -5,7 +5,7 @@ import { generateWithdrawalPDF } from '@/lib/pdf';
 
 export async function GET(
     request: NextRequest,
-    { params }: { params: { id: string } }
+    { params }: { params: Promise<{ id: string }> }
 ) {
     try {
         const user = await getCurrentUser();
@@ -13,7 +13,8 @@ export async function GET(
             return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
         }
 
-        const withdrawalId = params.id;
+        const { id } = await params;
+        const withdrawalId = id;
         const withdrawal = db.findOne('withdrawals', withdrawalId);
 
         if (!withdrawal) {
